@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomomic Impacts of Unemployment Rates</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Ecomomic Indicies and How They Impact Unemployment Rates </h1>
+            <p>Use the interactive charts below to explore the dataset</p>
+          </div>
+        </div>
+        <div class="topnav">
+          <a href="https://public.tableau.com/app/profile/helen.garcia/viz/UnemploymentRateDashboard_16688748668660/UnemploymentAnalysis?publish=yes">Click Here to View Tableau Dashboard</a>
+          </div>  
+        </div>                         
+        <div class="row">
+          <div class="col-md-2">
+            <div class="well">
+              <h5>Select Date to Compare Rates:</h5>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Ecomomic Info</h3>
+              </div>
+              <div id="date-metadata" class="panel-body"></div>
+            </div>
+          </div>
+          <div class="col-md-5 text-center">
+            <div id="chartbox1"> 
+              <div id="bar"></div>
+              <div class="caption">
+              <p>This bar chart shows the economic impact of the Federal Fund Rates and Inflation Rates and the affect the Unemployment Rates. </p>
+            </div>
+          </div>
+            <div class="col-md-12 text-center">
+              <div id="chartbox2"> 
+                <div id="bar2"></div>
+            <div class="caption text-center">
+        </div>
+      </div>
+        <div class="col-md-12 text-center">
+            <div id="chartbox3"> 
+            <div id="bar3"></div>
+          <div class="caption text-center">
+        <p>This bar chart shows the economic impact of the Consumer Price Index (cpi) and Producer Price Index (ppi) and and the affect the Unemployment Rates </p>
+     </div> 
+  </div>
+    </div>
+      </div>   
+        </div>
+          </div>
+           </div> 
+          <div class="col-md-10">
+        <div id="marginbox">
+          <img src="FedFund.png"/> <img src="cpi2.png"/> <img src="gdp2.png"/> 
+          <img src="ppi2.png"/> <img src="inflation2.png"/>
+         <p class="center">These images show the Linear Regression Models for each Index in comparision to the Unemployent Rates</p>
+    <div class="caption text-center">
+</div>
+</div>
+</div>                    
+  </div>
+    </div>
+      </div>
+      </div> 
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="charts.js"></script>
+</body>
+</html>
